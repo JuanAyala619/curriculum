@@ -11,6 +11,8 @@
 <body>
     <header>
         <h1>Juan Ayala</h1>
+        <img src="C:/Users/CltControl/Downloads/imagen_guia.jpg" alt="Foto de [Tu Nombre]" width="150" height="150"
+            style="border-radius: 50%;">
         <p>Estudiante de ingenieria en Computación en ESPOL | juaseaya@espol.edu.ec | 3333222211</p>
     </header>
     <nav>
@@ -32,12 +34,144 @@
         </section>
         <section id="educacion">
             <h2>Educación</h2>
+            <table align="center">
+                <caption>Resumen de educación</caption>
+                <thead>
+                    <tr>
+                        <th>Etapa</th>
+                        <th>Instituto</th>
+                        <th>Periodo</th>
+                        <th>Ubicación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Escuela</td>
+                        <td>Unidad Educativa Liceo Naval</td>
+                        <td>2010-2015</td>
+                        <td>Guayaquil, Ecuador</td>
+                    </tr>
+                    <tr>
+                        <td>Colegio</td>
+                        <td>Unidad Educativa Liceo Naval</td>
+                        <td>2016-2022</td>
+                        <td>Guayaquil, Ecuador</td>
+                    </tr>
+                    <tr>
+                        <td>Universidad</td>
+                        <td>ESPOL</td>
+                        <td>2022 - Presente</td>
+                        <td>Guayaquil, Ecuador</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+        </section>
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+
+            <article>
+                <blockquote>
+                    “Trabajar con [Tu Nombre] fue una experiencia increíble. Su profesionalismo y compromiso superaron
+                    todas nuestras expectativas.”
+                </blockquote>
+                <p>
+                    <strong>Laura Gómez</strong><br>
+                    Gerente de Proyectos en Soluciones Creativas S.A.<br>
+                    Colaboramos durante 2 años en el desarrollo de plataformas web enfocadas en la experiencia de
+                    usuario. Su enfoque metódico y habilidades técnicas fueron clave para el éxito del proyecto.
+                </p>
+            </article>
+
+            <article>
+                <blockquote>
+                    “Siempre supo cómo aportar soluciones innovadoras a cada reto. Un verdadero líder técnico en nuestro
+                    equipo.”
+                </blockquote>
+                <p>
+                    <strong>Carlos Ramírez</strong><br>
+                    CTO en NovaTech<br>
+                    [Tu Nombre] trabajó con nosotros como desarrollador frontend durante un año. Su capacidad para
+                    entender los requerimientos del cliente y traducirlos en productos funcionales fue excepcional.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    “Destaco su responsabilidad y pasión por la calidad en cada entrega. Es una persona en quien se
+                    puede confiar completamente.”
+                </blockquote>
+                <p>
+                    <strong>Elena Suárez</strong><br>
+                    Directora de Marketing en Agencia MKT360<br>
+                    Tuvimos el placer de contar con su apoyo freelance en múltiples campañas digitales. Su compromiso
+                    con los plazos y la calidad fue admirable.
+                </p>
+            </article>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="/enviar" method="post">
+
+                <!-- Entrada de texto en una línea -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <!-- Lista desplegable -->
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="trabajo">Oportunidad laboral</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <!-- Selección única (radio buttons) -->
+                <fieldset>
+                    <legend>¿Cómo nos conociste?</legend>
+                    <label>
+                        <input type="radio" name="conocio" value="redes" required>
+                        Redes sociales
+                    </label>
+                    <label>
+                        <input type="radio" name="conocio" value="referencia">
+                        Referencia
+                    </label>
+                    <label>
+                        <input type="radio" name="conocio" value="busqueda">
+                        Búsqueda en internet
+                    </label>
+                </fieldset>
+
+                <!-- Selección múltiple (checkboxes) -->
+                <fieldset>
+                    <legend>Servicios de interés</legend>
+                    <label>
+                        <input type="checkbox" name="servicios" value="desarrollo">
+                        Desarrollo web
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicios" value="diseno">
+                        Diseño UX/UI
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicios" value="consultoria">
+                        Consultoría técnica
+                    </label>
+                </fieldset>
+
+                <!-- Área de texto -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..."></textarea>
+
+                <!-- Botón enviar -->
+                <button type="submit">Enviar</button>
+
+            </form>
         </section>
     </main>
     <footer>
