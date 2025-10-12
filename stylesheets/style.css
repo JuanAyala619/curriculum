@@ -3,12 +3,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: "Stardos Stencil", system-ui;
     font-weight: 700;
     font-style: normal;
 }
+
 #photo {
 
     /* Ancho del elemento */
@@ -16,6 +17,8 @@ h1{
 
     /* Alto del elemento */
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .subtitle {
@@ -37,12 +40,13 @@ footer p {
 
 }
 
-nav > ul {
+nav>ul {
 
     /* Eliminar los estilos de lista predeterminados */
     list-style: none;
 
 }
+
 section {
 
     /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
@@ -59,5 +63,14 @@ section {
 
     /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
+    /* borde redondeado con un radio de 5 píxeles */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /* sombra a un elemento */
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 
 }
